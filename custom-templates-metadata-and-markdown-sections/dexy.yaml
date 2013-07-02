@@ -1,6 +1,6 @@
 .md|yamlargs|jinja|pandoc:
     - except: ex2
 
-ex2.md|yamlargs|jinja|pandoc:
+ex2.md|markdown|htmlsections:
     - ws-template: _alt_template.html
 

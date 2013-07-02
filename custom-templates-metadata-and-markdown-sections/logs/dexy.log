@@ -1,81 +1,39 @@
 dexy - INFO - starting logging for dexy
 dexy - INFO - using config file 'dexy.yaml'
-dexy - DEBUG - parsing item doc:ex2.md|yamlargs|jinja|pandoc
-dexy - DEBUG - parsing item bundle:inputs
-dexy - DEBUG - parsing item pattern:*.md|htmlsections
-dexy - DEBUG - valid 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: creating child of patterndoc *.md|htmlsections: ex2.md|htmlsections
-dexy - DEBUG - valid 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: creating child of patterndoc *.md|htmlsections: foo/ex3.md|htmlsections
-dexy - DEBUG - valid 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: creating child of patterndoc *.md|htmlsections: ex1.md|htmlsections
-dexy - DEBUG - creating node *.md|htmlsections
-dexy - DEBUG - creating node inputs
-dexy - DEBUG - inputs are *.md|htmlsections
-dexy - DEBUG - creating node ex2.md|yamlargs|jinja|pandoc
-dexy - DEBUG - inputs are inputs
+dexy - DEBUG - parsing item doc:ex2.md|markdown|htmlsections
+dexy - DEBUG - creating node ex2.md|markdown|htmlsections
 dexy - DEBUG - parsing item pattern:*.md|yamlargs|jinja|pandoc
-dexy - DEBUG - parsing item bundle:inputs
-dexy - DEBUG - parsing item pattern:*.md|htmlsections
 dexy - DEBUG - valid a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: not creating child of patterndoc for file 'ex2.md' because it matches except 'ex2'
+dexy - DEBUG - valid a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: creating child of patterndoc *.md|yamlargs|jinja|pandoc: ex4.md|yamlargs|jinja|pandoc
 dexy - DEBUG - valid a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: creating child of patterndoc *.md|yamlargs|jinja|pandoc: foo/ex3.md|yamlargs|jinja|pandoc
 dexy - DEBUG - valid a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: creating child of patterndoc *.md|yamlargs|jinja|pandoc: ex1.md|yamlargs|jinja|pandoc
 dexy - DEBUG - creating node *.md|yamlargs|jinja|pandoc
-dexy - DEBUG - inputs are inputs
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: checking if ex2.md|yamlargs|jinja|pandoc is changed
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs: checking if inputs is changed
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: checking if *.md|htmlsections is changed
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections: checking if ex2.md|htmlsections is changed
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections: no saved args, will return True for args_changed
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections:   doc changed True
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections:   args changed True
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections:   any inputs not cached False
-dexy - DEBUG - walked 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections:   cache elements missing True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:     input node doc:ex2.md|htmlsections is not cached
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections: checking if foo/ex3.md|htmlsections is changed
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections: no saved args, will return True for args_changed
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections:   doc changed True
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections:   args changed True
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections:   any inputs not cached False
-dexy - DEBUG - walked c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections:   cache elements missing True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:     input node doc:foo/ex3.md|htmlsections is not cached
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections: checking if ex1.md|htmlsections is changed
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections: no saved args, will return True for args_changed
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections:   doc changed True
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections:   args changed True
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections:   any inputs not cached False
-dexy - DEBUG - walked 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections:   cache elements missing True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:     input node doc:ex1.md|htmlsections is not cached
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: no saved args, will return True for args_changed
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:   doc changed True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:   args changed True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:   any inputs not cached True
-dexy - DEBUG - walked 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections:   cache elements missing False
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs:     input node pattern:*.md|htmlsections is not cached
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs: no saved args, will return True for args_changed
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs:   doc changed False
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs:   args changed True
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs:   any inputs not cached True
-dexy - DEBUG - walked a8aff967e1649a1c82ea607c881e8091 bundle:inputs:   cache elements missing False
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc:     input node bundle:inputs is not cached
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: no saved args, will return True for args_changed
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc:   doc changed True
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc:   args changed True
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc:   any inputs not cached True
-dexy - DEBUG - walked f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc:   cache elements missing True
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections: checking if ex2.md|markdown|htmlsections is changed
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections: no saved args, will return True for args_changed
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections:   doc changed True
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections:   args changed True
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections:   any inputs not cached False
+dexy - DEBUG - walked e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections:   cache elements missing True
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: checking if *.md|yamlargs|jinja|pandoc is changed
-dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:     input node bundle:inputs is not cached
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: checking if ex4.md|yamlargs|jinja|pandoc is changed
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: no saved args, will return True for args_changed
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc:   doc changed True
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc:   args changed True
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc:   any inputs not cached False
+dexy - DEBUG - walked b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc:   cache elements missing True
+dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:     input node doc:ex4.md|yamlargs|jinja|pandoc is not cached
 dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: checking if foo/ex3.md|yamlargs|jinja|pandoc is changed
-dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:     input node bundle:inputs is not cached
 dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: no saved args, will return True for args_changed
 dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:   doc changed True
 dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:   args changed True
-dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:   any inputs not cached True
+dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:   any inputs not cached False
 dexy - DEBUG - walked 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc:   cache elements missing True
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:     input node doc:foo/ex3.md|yamlargs|jinja|pandoc is not cached
 dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: checking if ex1.md|yamlargs|jinja|pandoc is changed
-dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:     input node bundle:inputs is not cached
 dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: no saved args, will return True for args_changed
 dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:   doc changed True
 dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:   args changed True
-dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:   any inputs not cached True
+dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:   any inputs not cached False
 dexy - DEBUG - walked 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc:   cache elements missing True
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:     input node doc:ex1.md|yamlargs|jinja|pandoc is not cached
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: no saved args, will return True for args_changed
@@ -83,50 +41,38 @@ dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jin
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:   args changed True
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:   any inputs not cached True
 dexy - DEBUG - walked a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc:   cache elements missing False
-dexy - INFO - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: about to run 'doc:ex2.md|yamlargs|jinja|pandoc'
-dexy - INFO - running a8aff967e1649a1c82ea607c881e8091 bundle:inputs: about to run 'bundle:inputs'
-dexy - INFO - running 91392983f358f952324e355e0dfa6207 pattern:*.md|htmlsections: about to run 'pattern:*.md|htmlsections'
-dexy - INFO - running 0b67e9346c5d270780af736964947b1f doc:ex2.md|htmlsections: about to run 'doc:ex2.md|htmlsections'
-dexy - INFO - running c65b5622d594cfe72724f6a959a38634 doc:foo/ex3.md|htmlsections: about to run 'doc:foo/ex3.md|htmlsections'
-dexy - INFO - running 3e5c4b87424e08ac32574e0359d18a23 doc:ex1.md|htmlsections: about to run 'doc:ex1.md|htmlsections'
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: setting up jinja FileSystemLoader with dirs ., .cache/work/f5/f5199c0fe0668870bc68d1d0e8f7e2c0-002-yamlargs-jinja/, , /home/ana/dev/dexy/dexy/macros
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: setting up jinja environment
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x471b4d0>, block_start_string: '{%', variable_end_string: '}}'
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: initializing template
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin PythonBuiltins
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin PythonDatetime
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Debug
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin DexyVersion
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Globals
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Inflection
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Inputs
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin SimpleJson
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin PrettyPrintJson
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin PygmentsStylesheet
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin RegularExpressions
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Subdirectories
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: Running template plugin Variables
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, camelize, chr, cmp, complex, d, dasherize, datetime, debug, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, humanize, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, ordinal, ordinalize, parameterize, pluralize, pow, ppjson, pygments, raise, range, re_match, re_search, reduce, repr, reversed, round, s, set, singularize, slice, sorted, str, subdirectories, sum, throw, titleize, today, transliterate, tuple, underscore, unicode, w, xrange, year, zip
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: about to create jinja template
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: about to process jinja template
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: about to run 'pandoc   "ex2.md" -o "ex2.html"' in '/home/ana/dev/dexy-support/custom-templates-metadata-and-markdown-sections/.cache/work/f5/f5199c0fe0668870bc68d1d0e8f7e2c0-003-yamlargs-jinja-pandoc'
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: stdout is ''
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: stderr is ''
-dexy - DEBUG - running f5199c0fe0668870bc68d1d0e8f7e2c0 doc:ex2.md|yamlargs|jinja|pandoc: exit code is '0'
+dexy - INFO - running e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections: about to run 'doc:ex2.md|markdown|htmlsections'
+dexy - DEBUG - running e0966602eb214fa58e1b110e3cda1dce doc:ex2.md|markdown|htmlsections: Initializing Markdown with extensions: ["toc"] and extension configs: {"toc": {}}
 dexy - INFO - running a4a976850340864c38ee2f06bfe7e363 pattern:*.md|yamlargs|jinja|pandoc: about to run 'pattern:*.md|yamlargs|jinja|pandoc'
+dexy - INFO - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: about to run 'doc:ex4.md|yamlargs|jinja|pandoc'
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: setting up jinja FileSystemLoader with dirs ., .cache/work/b9/b9aceb2c254652cceae9f2218cafba4d-002-yamlargs-jinja/, , /home/ana/dev/dexy/dexy/macros
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: setting up jinja environment
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x239f410>, block_start_string: '{%', variable_end_string: '}}'
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: initializing template
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin PythonBuiltins
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin PythonDatetime
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Debug
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin DexyVersion
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Globals
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Inflection
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Inputs
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin SimpleJson
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin PrettyPrintJson
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin PygmentsStylesheet
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin RegularExpressions
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Subdirectories
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: Running template plugin Variables
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, camelize, chr, cmp, complex, d, dasherize, datetime, debug, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, humanize, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, ordinal, ordinalize, parameterize, pluralize, pow, ppjson, pygments, raise, range, re_match, re_search, reduce, repr, reversed, round, s, set, singularize, slice, sorted, str, subdirectories, sum, throw, titleize, today, transliterate, tuple, underscore, unicode, w, xrange, year, zip
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: about to create jinja template
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: about to process jinja template
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: about to run 'pandoc   "ex4.md" -o "ex4.html"' in '/home/ana/dev/dexy-support/custom-templates-metadata-and-markdown-sections/.cache/work/b9/b9aceb2c254652cceae9f2218cafba4d-003-yamlargs-jinja-pandoc'
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: stdout is ''
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: stderr is ''
+dexy - DEBUG - running b9aceb2c254652cceae9f2218cafba4d doc:ex4.md|yamlargs|jinja|pandoc: exit code is '0'
 dexy - INFO - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: about to run 'doc:foo/ex3.md|yamlargs|jinja|pandoc'
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: setting up jinja FileSystemLoader with dirs ., .cache/work/4c/4c610840a835bbc9c0fac33fa1dc9e6c-002-yamlargs-jinja/foo, foo, /home/ana/dev/dexy/dexy/macros
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: setting up jinja environment
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x471b7d0>, block_start_string: '{%', variable_end_string: '}}'
+dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x2967c10>, block_start_string: '{%', variable_end_string: '}}'
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: initializing template
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: Running template plugin PythonBuiltins
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: Running template plugin PythonDatetime
@@ -144,20 +90,14 @@ dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, camelize, chr, cmp, complex, d, dasherize, datetime, debug, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, humanize, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, ordinal, ordinalize, parameterize, pluralize, pow, ppjson, pygments, raise, range, re_match, re_search, reduce, repr, reversed, round, s, set, singularize, slice, sorted, str, subdirectories, sum, throw, titleize, today, transliterate, tuple, underscore, unicode, w, xrange, year, zip
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: about to create jinja template
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: about to process jinja template
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: about to run 'pandoc   "ex3.md" -o "ex3.html"' in '/home/ana/dev/dexy-support/custom-templates-metadata-and-markdown-sections/.cache/work/4c/4c610840a835bbc9c0fac33fa1dc9e6c-003-yamlargs-jinja-pandoc/foo'
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: stdout is ''
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: stderr is ''
 dexy - DEBUG - running 4c610840a835bbc9c0fac33fa1dc9e6c doc:foo/ex3.md|yamlargs|jinja|pandoc: exit code is '0'
 dexy - INFO - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: about to run 'doc:ex1.md|yamlargs|jinja|pandoc'
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: setting up jinja FileSystemLoader with dirs ., .cache/work/32/32eebecb776820a9d0d199c5620bf75d-002-yamlargs-jinja/, , /home/ana/dev/dexy/dexy/macros
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: setting up jinja environment
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x471b950>, block_start_string: '{%', variable_end_string: '}}'
+dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, comment_start_string: '{#', block_end_string: '%}', comment_end_string: '#}', variable_start_string: '{{', loader: <jinja2.loaders.FileSystemLoader object at 0x2949950>, block_start_string: '{%', variable_end_string: '}}'
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: initializing template
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: Running template plugin PythonBuiltins
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: Running template plugin PythonDatetime
@@ -175,38 +115,26 @@ dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinj
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: jinja template data keys are DEXY_VERSION, a, abs, all, any, args, bin, bool, bytearray, cal, caldates, calendar, callable, camelize, chr, cmp, complex, d, dasherize, datetime, debug, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, humanize, id, int, isinstance, issubclass, iter, json, len, list, locals, long, map, max, min, month, oct, ord, ordinal, ordinalize, parameterize, pluralize, pow, ppjson, pygments, raise, range, re_match, re_search, reduce, repr, reversed, round, s, set, singularize, slice, sorted, str, subdirectories, sum, throw, titleize, today, transliterate, tuple, underscore, unicode, w, xrange, year, zip
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: about to create jinja template
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: about to process jinja template
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with ex2.json for ex2.md|htmlsections
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with foo/ex3.json for foo/ex3.md|htmlsections
-dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: populating workspace with ex1.json for ex1.md|htmlsections
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: about to run 'pandoc   "ex1.md" -o "ex1.html"' in '/home/ana/dev/dexy-support/custom-templates-metadata-and-markdown-sections/.cache/work/32/32eebecb776820a9d0d199c5620bf75d-003-yamlargs-jinja-pandoc'
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: stdout is ''
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: stderr is ''
 dexy - DEBUG - running 32eebecb776820a9d0d199c5620bf75d doc:ex1.md|yamlargs|jinja|pandoc: exit code is '0'
-dexy - DEBUG - generating user-specified reports 'ws long'
+dexy - DEBUG - generating user-specified reports 'ws'
 dexy - DEBUG - running reporter ws
+dexy - DEBUG - reporter:ws: processing data ex4.md|yamlargs|jinja|pandoc
+dexy - DEBUG - reporter:ws:   using template /_template.html for ex4.md|yamlargs|jinja|pandoc
+dexy - DEBUG - reporter:ws:   loading template at /_template.html
+dexy - DEBUG - reporter:ws:   writing to output-site/ex4.html
 dexy - DEBUG - reporter:ws: processing data foo/ex3.md|yamlargs|jinja|pandoc
 dexy - DEBUG - reporter:ws:   using template foo/_template.html for foo/ex3.md|yamlargs|jinja|pandoc
 dexy - DEBUG - reporter:ws:   loading template at foo/_template.html
 dexy - DEBUG - reporter:ws:   writing to output-site/foo/ex3.html
-dexy - DEBUG - reporter:ws: processing data ex2.md|htmlsections
-dexy - DEBUG - reporter:ws:   not canonical output
-dexy - DEBUG - reporter:ws: processing data ex2.md|yamlargs|jinja|pandoc
-dexy - DEBUG - reporter:ws:   using template /_alt_template.html for ex2.md|yamlargs|jinja|pandoc
-dexy - DEBUG - reporter:ws:   loading template at /_alt_template.html
-dexy - DEBUG - reporter:ws:   writing to output-site/ex2.html
-dexy - DEBUG - reporter:ws: processing data foo/ex3.md|htmlsections
-dexy - DEBUG - reporter:ws:   not canonical output
-dexy - DEBUG - reporter:ws: processing data ex1.md|htmlsections
-dexy - DEBUG - reporter:ws:   not canonical output
 dexy - DEBUG - reporter:ws: processing data ex1.md|yamlargs|jinja|pandoc
 dexy - DEBUG - reporter:ws:   using template /_template.html for ex1.md|yamlargs|jinja|pandoc
 dexy - DEBUG - reporter:ws:   loading template at /_template.html
 dexy - DEBUG - reporter:ws:   writing to output-site/ex1.html
+dexy - DEBUG - reporter:ws: processing data ex2.md|markdown|htmlsections
+dexy - DEBUG - reporter:ws:   using template /_alt_template.html for ex2.md|markdown|htmlsections
+dexy - DEBUG - reporter:ws:   loading template at /_alt_template.html
+dexy - DEBUG - reporter:ws:   writing to output-site/ex2.html
 dexy - DEBUG - reporter:ws: finished
-dexy - DEBUG - running reporter long
-dexy - DEBUG - reporter:long:   writing foo/ex3.md|yamlargs|jinja|pandoc to output-long/foo/ex3.md-yamlargs-jinja-pandoc.html
-dexy - DEBUG - reporter:long:   writing ex2.md|htmlsections to output-long/ex2.md-htmlsections.json
-dexy - DEBUG - reporter:long:   writing ex2.md|yamlargs|jinja|pandoc to output-long/ex2.md-yamlargs-jinja-pandoc.html
-dexy - DEBUG - reporter:long:   writing foo/ex3.md|htmlsections to output-long/foo/ex3.md-htmlsections.json
-dexy - DEBUG - reporter:long:   writing ex1.md|htmlsections to output-long/ex1.md-htmlsections.json
-dexy - DEBUG - reporter:long:   writing ex1.md|yamlargs|jinja|pandoc to output-long/ex1.md-yamlargs-jinja-pandoc.html
